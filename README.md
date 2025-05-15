@@ -64,3 +64,17 @@ ENDPOINT=https://openrouter.ai/api/v1
 streamlit run main.py
 
 ```
+---
+
+## 📝 Example
+Upload your CV and instantly get a clean, improved version with tailored suggestions powered by AI.
+
+---
+
+## 📃 License
+MIT — feel free to use, modify, and share.
+
+---
+
+## 🙌 Credits
+Built using OpenRouter’s LLMs like DeepSeek or others, and powered by Streamlit.

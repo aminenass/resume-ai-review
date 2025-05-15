@@ -5,7 +5,7 @@ import os
 import fitz # PyMuPDF for PDF
 import docx  # python-docx for Word
 
-llm = ChatOpenAI(model="deepseek/deepseek-chat-v3-0324:free", api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("OPENAI_ENDPOINT"),)
+llm = ChatOpenAI(model="", api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("OPENAI_ENDPOINT"),)
 
 
 st.title("HI, I'M A RESUME ANALYSER")
@@ -58,15 +58,5 @@ if uploaded_file is not None:
 
         response = llm.invoke(prompt)  # or however you're calling your LLM
         st.write(response.content)
-        # message = st.text_area("Message", value= response.content)
-        # if st.button("Prepare download"):
-        #             st.download_button(
-        #                 label="Download text",
-        #                 data=message,
-        #                 file_name="message.txt",
-        #                 on_click="ignore",
-        #                 type="primary",
-        #                 icon=":material/download:",
-        #             )
 
 
